@@ -1,4 +1,4 @@
-import { Code2 as Github, Globe as Linkedin, Mail, MapPin, Phone } from 'lucide-react'
+import { Code2 as Github, Globe as Linkedin, Mail, MapPin } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 
 export function Contact() {
@@ -21,12 +21,6 @@ export function Contact() {
       value: profile.github.replace(/^https?:\/\/(www\.)?/, ''),
       href: profile.github,
     },
-    profile.phone && {
-      icon: Phone,
-      label: 'Mobile',
-      value: profile.phone,
-      href: `tel:${profile.phone.replace(/[^+\d]/g, '')}`,
-    },
     { icon: MapPin, label: 'Location', value: profile.location },
   ].filter(Boolean) as { icon: typeof Mail; label: string; value: string; href?: string }[]
 
@@ -37,11 +31,10 @@ export function Contact() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-teal">Contact</p>
             <h2 id="contact-heading" className="mt-2 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-              {"Let's build reliable software together"}
+              {"Let's build reliable AI systems together"}
             </h2>
             <p className="mt-5 max-w-lg text-pretty text-lg leading-relaxed text-navy-foreground/80">
-              Open to QA, test automation and technical documentation roles. Reach out to discuss how I
-              can help your team ship with confidence.
+              {profile.contactNote}
             </p>
           </div>
 
@@ -85,7 +78,7 @@ export function Contact() {
             {'© '}
             {new Date().getFullYear()} {profile.name}. All rights reserved.
           </p>
-          <p>QA Engineer · {profile.location}</p>
+          <p>QA Engineer · Generative AI · {profile.location}</p>
         </footer>
       </div>
     </section>

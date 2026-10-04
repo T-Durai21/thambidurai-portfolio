@@ -54,14 +54,14 @@ export function SiteHeader() {
           <span className="font-semibold tracking-tight">{profile.name}</span>
         </a>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-0.5 lg:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 aria-current={active === link.href ? 'true' : undefined}
                 className={cn(
-                  'rounded-md px-3 py-2 text-sm font-medium transition-colors',
+                  'rounded-md px-2.5 py-2 text-sm font-medium transition-colors',
                   active === link.href ? 'text-teal' : 'text-navy-foreground/80 hover:text-white',
                 )}
               >
@@ -73,7 +73,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="rounded-md p-2 text-white md:hidden"
+          className="rounded-md p-2 text-white lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
@@ -84,7 +84,7 @@ export function SiteHeader() {
       </nav>
 
       {open && (
-        <ul id="mobile-menu" className="border-t border-white/10 px-5 pb-4 md:hidden">
+        <ul id="mobile-menu" className="border-t border-white/10 px-5 pb-4 lg:hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a

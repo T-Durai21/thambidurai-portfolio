@@ -2,19 +2,21 @@ export const profile = {
   name: 'V. Thambidurai',
   role: 'QA Engineer',
   location: 'Chennai, India',
-  title:
-    'QA Engineer | Manual Testing | Test Automation (Selenium, Java) | Technical Documentation',
-  tagline: 'Ensuring software quality across banking, payments, healthcare and AI',
+  title: 'QA Engineer Transitioning into Generative AI | Python | AI Evaluation | Test Automation',
+  tagline: 'Bringing 4.5+ years of software quality expertise to building and evaluating reliable AI systems',
   email: 'vthambiduraitd@gmail.com',
-  phone: '+91-8110099200',
   linkedin: 'https://www.linkedin.com/in/thambidurai-v',
   github: 'https://github.com/T-Durai21',
+  contactNote: 'Open to remote roles in AI evaluation, AI QA and Generative AI.',
 }
 
 export const navLinks = [
   { href: '#about', label: 'About' },
+  { href: '#ai-journey', label: 'AI Journey' },
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#credentials', label: 'Credentials' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -33,13 +35,57 @@ export const domains = [
   'Title Insurance',
 ]
 
+export type JourneyItem = {
+  icon: 'graduation' | 'scale' | 'smartphone' | 'book'
+  title: string
+  description: string
+  period?: string
+}
+
+export const aiJourney: JourneyItem[] = [
+  {
+    icon: 'graduation',
+    title: 'AI Engineering Bootcamp',
+    description: 'Currently completing an AI Engineering Bootcamp (Generative AI and Python) on Udemy.',
+    period: 'In progress',
+  },
+  {
+    icon: 'scale',
+    title: 'AI evaluation at Handshake AI',
+    description:
+      'AI evaluation work on Handshake AI, including comparing GPT-4 vs GPT-5 outputs for instruction following, structure and style.',
+  },
+  {
+    icon: 'smartphone',
+    title: 'Building with Claude',
+    description: 'Built 3 Android apps and 1 website with Claude through plain-English prompting.',
+  },
+  {
+    icon: 'book',
+    title: 'Self-directed study',
+    description: 'Self-directed study in prompt engineering, LLM frameworks and ethical AI.',
+    period: 'Sep – Dec 2024',
+  },
+]
+
 export type SkillGroup = {
   title: string
-  icon: 'shield' | 'bot' | 'server' | 'code' | 'wrench'
+  icon: 'sparkles' | 'shield' | 'bot' | 'server' | 'code' | 'wrench'
   items: string[]
 }
 
 export const skillGroups: SkillGroup[] = [
+  {
+    title: 'Generative AI and Python (Learning)',
+    icon: 'sparkles',
+    items: [
+      'Python',
+      'Prompt Engineering',
+      'LLM Evaluation',
+      'AI Output Testing',
+      'Generative AI fundamentals',
+    ],
+  },
   {
     title: 'Quality Assurance',
     icon: 'shield',
@@ -97,8 +143,67 @@ export const experiences: Experience[] = [
     company: 'Handshake AI (via Zetta Mine)',
     period: 'Sep 2026 – Present',
     current: true,
+    highlights: ['Authored an 80-page end-to-end manual QA testing guide.'],
+  },
+  {
+    role: 'Freelance App Builder and QA Engineer',
+    company: 'Self-employed',
+    period: 'Jan 2025 – Present',
+    current: true,
     highlights: [
-      'Authored an 80-page engineering and data documentation deliverable for Handshake AI.',
+      "Built 3 Android apps and 1 website with Claude for Swastick Builders and M'De Vins Labs, including a stockist ordering app with payment gateway and a medical rep tracking app.",
+      'Performed manual and TestNG-automated testing.',
     ],
+  },
+  {
+    role: 'Software Test Engineer cum Flutter Developer',
+    company: 'India Floats Technologies',
+    period: 'Apr 2024 – Aug 2024',
+    highlights: [],
+  },
+  {
+    role: 'Software Test Engineer cum Flutter Developer',
+    company: 'Kappsoft Systems',
+    period: 'Jun 2022 – Oct 2023',
+    highlights: [
+      'Led QA for UPI payment and crypto apps.',
+      'Built a geofencing attendance app proof of concept.',
+    ],
+  },
+  {
+    role: 'Data Analyst',
+    company: 'Fidelity National Financial India',
+    period: 'Nov 2014 – Dec 2015',
+    highlights: [],
+  },
+  {
+    role: 'Software Test Engineer',
+    company: 'Indium Software',
+    period: '2012 – Oct 2014',
+    highlights: ['Tested banking and healthcare applications with Selenium.'],
+  },
+]
+
+export const projects = [
+  {
+    title: 'Evaluating GPT-4 vs GPT-5',
+    type: 'AI evaluation project',
+    organization: 'Handshake AI Skills Studio',
+    year: '2026',
+  },
+]
+
+export const certifications = [
+  { title: 'AI Evaluation Fundamentals', issuer: 'PlatinaIQ' },
+  { title: 'How Evals Improve AI Models', issuer: 'Handshake AI', year: '2026' },
+  { title: 'Manual Testing and Selenium with Java', issuer: 'Besant Technologies', year: '2023' },
+  { title: 'AI Engineering Bootcamp', issuer: 'Udemy', inProgress: true },
+]
+
+export const education = [
+  {
+    degree: 'B.E. Electronics and Communication Engineering',
+    institution: 'Anna University',
+    year: '2010',
   },
 ]

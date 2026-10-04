@@ -4,7 +4,7 @@ import { SectionHeading } from './section-heading'
 
 export function Experience() {
   return (
-    <section id="experience" aria-labelledby="experience-heading" className="py-20 md:py-28">
+    <section id="experience" aria-labelledby="experience-heading" className="bg-muted py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <SectionHeading id="experience-heading" eyebrow="Experience" title="Career timeline" />
 
@@ -13,7 +13,7 @@ export function Experience() {
             <li key={`${exp.company}-${exp.period}`} className="relative pb-12 last:pb-0">
               <span
                 aria-hidden="true"
-                className="absolute -left-[calc(2rem+1px)] top-1 flex size-8 -translate-x-1/2 items-center justify-center rounded-full border-4 border-background bg-primary text-primary-foreground md:-left-[calc(3rem+1px)]"
+                className="absolute -left-[calc(2rem+1px)] top-1 flex size-8 -translate-x-1/2 items-center justify-center rounded-full border-4 border-muted bg-primary text-primary-foreground md:-left-[calc(3rem+1px)]"
               >
                 <Briefcase className="size-3.5" />
               </span>
@@ -33,14 +33,16 @@ export function Experience() {
                     <time>{exp.period}</time>
                   </p>
                 </div>
-                <ul className="mt-5 space-y-2.5">
-                  {exp.highlights.map((h) => (
-                    <li key={h} className="flex gap-3 leading-relaxed text-muted-foreground">
-                      <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />
-                      {h}
-                    </li>
-                  ))}
-                </ul>
+                {exp.highlights.length > 0 && (
+                  <ul className="mt-5 space-y-2.5">
+                    {exp.highlights.map((h) => (
+                      <li key={h} className="flex gap-3 leading-relaxed text-muted-foreground">
+                        <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </article>
             </li>
           ))}

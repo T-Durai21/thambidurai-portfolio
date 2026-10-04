@@ -33,7 +33,7 @@ export function Hero() {
         </p>
 
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-navy-foreground/80 md:text-xl">
-          {profile.tagline}.
+          {profile.tagline}
         </p>
 
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">

@@ -1,8 +1,9 @@
-import { Bot, Code2, Server, ShieldCheck, Wrench, type LucideIcon } from 'lucide-react'
+import { Bot, Code2, Server, ShieldCheck, Sparkles, Wrench, type LucideIcon } from 'lucide-react'
 import { skillGroups, type SkillGroup } from '@/lib/portfolio-data'
 import { SectionHeading } from './section-heading'
 
 const icons: Record<SkillGroup['icon'], LucideIcon> = {
+  sparkles: Sparkles,
   shield: ShieldCheck,
   bot: Bot,
   server: Server,
@@ -12,9 +13,9 @@ const icons: Record<SkillGroup['icon'], LucideIcon> = {
 
 export function Skills() {
   return (
-    <section id="skills" aria-labelledby="skills-heading" className="bg-muted py-20 md:py-28">
+    <section id="skills" aria-labelledby="skills-heading" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <SectionHeading id="skills-heading" eyebrow="Skills" title="Testing toolkit" />
+        <SectionHeading id="skills-heading" eyebrow="Skills" title="Toolkit" />
 
         <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group) => {
