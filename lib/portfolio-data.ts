@@ -5,8 +5,10 @@ export const profile = {
   title:
     'QA Engineer | Manual Testing | Test Automation (Selenium, Java) | Technical Documentation',
   tagline: 'Ensuring software quality across banking, payments, healthcare and AI',
-  email: '',
-  linkedin: '',
+  email: 'vthambiduraitd@gmail.com',
+  phone: '+91-8110099200',
+  linkedin: 'https://www.linkedin.com/in/thambidurai-v',
+  github: 'https://github.com/T-Durai21',
 }
 
 export const navLinks = [

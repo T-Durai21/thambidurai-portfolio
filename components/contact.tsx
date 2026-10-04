@@ -1,4 +1,4 @@
-import { Globe as Linkedin, Mail, MapPin } from 'lucide-react'
+import { Code2 as Github, Globe as Linkedin, Mail, MapPin, Phone } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 
 export function Contact() {
@@ -14,6 +14,18 @@ export function Contact() {
       label: 'LinkedIn',
       value: profile.linkedin.replace(/^https?:\/\/(www\.)?/, ''),
       href: profile.linkedin,
+    },
+    profile.github && {
+      icon: Github,
+      label: 'GitHub',
+      value: profile.github.replace(/^https?:\/\/(www\.)?/, ''),
+      href: profile.github,
+    },
+    profile.phone && {
+      icon: Phone,
+      label: 'Mobile',
+      value: profile.phone,
+      href: `tel:${profile.phone.replace(/[^+\d]/g, '')}`,
     },
     { icon: MapPin, label: 'Location', value: profile.location },
   ].filter(Boolean) as { icon: typeof Mail; label: string; value: string; href?: string }[]
