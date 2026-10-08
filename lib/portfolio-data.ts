@@ -3,7 +3,7 @@ export const profile = {
   role: 'QA Engineer',
   location: 'Chennai, India',
   title: 'QA Engineer Transitioning into Generative AI | Python | AI Evaluation | Test Automation',
-  tagline: 'Bringing 4.5+ years of software quality expertise to building and evaluating reliable AI systems',
+  tagline: 'Bringing 5.5+ years of software quality expertise to building and evaluating reliable AI systems',
   email: 'vthambiduraitd@gmail.com',
   linkedin: 'https://www.linkedin.com/in/thambidurai-v',
   github: 'https://github.com/T-Durai21',
@@ -21,7 +21,7 @@ export const navLinks = [
 ]
 
 export const stats = [
-  { value: '4.5+', label: 'Years in QA' },
+  { value: '5.5+', label: 'Years in QA' },
   { value: '10+', label: 'Year career' },
   { value: '6', label: 'Domains tested' },
 ]
@@ -171,6 +171,12 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    role: 'System Admin',
+    company: "M'De Vins Labs",
+    period: '2016 – Dec 2019',
+    highlights: ['Maintained company systems, backups, and hardware; supported sales reports and payroll.'],
+  },
+  {
     role: 'Data Analyst',
     company: 'Fidelity National Financial India',
     period: 'Nov 2014 – Dec 2015',
@@ -179,8 +185,26 @@ export const experiences: Experience[] = [
   {
     role: 'Software Test Engineer',
     company: 'Indium Software',
-    period: '2012 – Oct 2014',
+    period: 'Sep 2013 – Oct 2014',
     highlights: ['Tested banking and healthcare applications with Selenium.'],
+  },
+  {
+    role: 'Software Test Engineer Intern',
+    company: 'Indium Software',
+    period: 'Mar 2013 – Aug 2013',
+    highlights: [],
+  },
+  {
+    role: 'Feet On Street, Intel Buzztop Program',
+    company: 'CPM India Sales & Marketing',
+    period: 'Jul 2012 – Dec 2012',
+    highlights: [],
+  },
+  {
+    role: 'Executive, Retail Sales (Client: HP)',
+    company: 'Xylem Resource Management',
+    period: 'Jan 2011 – Jun 2012',
+    highlights: [],
   },
 ]
 

@@ -11,7 +11,7 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-5 lg:gap-16">
           <div className="space-y-5 text-pretty text-lg leading-relaxed text-muted-foreground lg:col-span-3">
             <p>
-              I bring <strong className="font-semibold text-foreground">4.5+ years of QA experience</strong>{' '}
+              I bring <strong className="font-semibold text-foreground">5.5+ years of QA experience</strong>{' '}
               within a 10+ year career, testing products across banking, UPI payments, cryptocurrency,
               healthcare, pharmaceuticals and title insurance.
             </p>
