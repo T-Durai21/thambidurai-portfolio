@@ -13,7 +13,7 @@ export function AiJourney() {
   return (
     <section id="ai-journey" aria-labelledby="ai-journey-heading" className="bg-muted py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <SectionHeading id="ai-journey-heading" eyebrow="Career transition" title="Generative AI Journey" />
+        <SectionHeading id="ai-journey-heading" eyebrow="AI focus" title="Evaluation and applied AI work" />
 
         <ul className="grid gap-5 md:grid-cols-2">
           {aiJourney.map((item) => {
