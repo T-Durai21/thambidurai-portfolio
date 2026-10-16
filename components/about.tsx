@@ -11,19 +11,23 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-5 lg:gap-16">
           <div className="space-y-5 text-pretty text-lg leading-relaxed text-muted-foreground lg:col-span-3">
             <p>
-              I bring <strong className="font-semibold text-foreground">5.5+ years of QA experience</strong>{' '}
-              within a 10+ year career, testing products across banking, UPI payments, cryptocurrency,
-              healthcare, pharmaceuticals and title insurance.
+              I have{' '}
+              <strong className="font-semibold text-foreground">
+                approximately five years of software testing experience
+              </strong>{' '}
+              — three years full-time and freelance since January 2025 — across banking, UPI payments,
+              cryptocurrency, healthcare, pharmaceuticals, title insurance and construction.
             </p>
             <p>
-              I&apos;m skilled in manual testing, test case design, functional and regression testing, UAT
-              and end-to-end defect lifecycle management, with automation using{' '}
+              My work covers manual testing, test case design, and functional, regression, integration and
+              UAT cycles, with defects managed from triage to closure and traced back to acceptance
+              criteria, supported by automation with{' '}
               <strong className="font-semibold text-foreground">Selenium WebDriver, Java and TestNG</strong>.
             </p>
             <p>
-              I&apos;m currently creating engineering documentation for{' '}
-              <strong className="font-semibold text-foreground">Handshake AI</strong>, while learning
-              Generative AI and Python.
+              I am currently evaluating LLM responses and writing engineering and data documentation for US
+              client <strong className="font-semibold text-foreground">Handshake AI</strong> through
+              ZettaMine Labs, while studying Generative AI and Python.
             </p>
           </div>
 
@@ -43,7 +47,7 @@ export function About() {
                 ))}
               </ul>
               <div className="mt-6 flex items-start gap-3 rounded-xl bg-navy p-4 text-navy-foreground">
-                <Sparkles className="mt-0.5 size-5 shrink-0 text-teal" aria-hidden="true" />
+                <Sparkles className="mt-0.5 size-5 shrink-0 text-brand" aria-hidden="true" />
                 <p className="text-sm leading-relaxed">
                   <span className="font-semibold text-white">Currently learning:</span> Generative AI and
                   Python

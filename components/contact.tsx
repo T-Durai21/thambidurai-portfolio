@@ -1,4 +1,4 @@
-import { Code2 as Github, Globe as Linkedin, Mail, MapPin } from 'lucide-react'
+import { Code2 as Github, Globe as Linkedin, Mail, MapPin, Phone } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 
 export function Contact() {
@@ -8,6 +8,12 @@ export function Contact() {
       label: 'Email',
       value: profile.email,
       href: `mailto:${profile.email}`,
+    },
+    profile.phone && {
+      icon: Phone,
+      label: 'Phone',
+      value: profile.phone,
+      href: `tel:${profile.phone.replace(/\s+/g, '')}`,
     },
     profile.linkedin && {
       icon: Linkedin,
@@ -29,9 +35,9 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-teal">Contact</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-brand">Contact</p>
             <h2 id="contact-heading" className="mt-2 text-balance text-3xl font-bold tracking-tight md:text-4xl">
-              {"Let's build reliable AI systems together"}
+              Available for QA, automation and evaluation roles
             </h2>
             <p className="mt-5 max-w-lg text-pretty text-lg leading-relaxed text-navy-foreground/80">
               {profile.contactNote}
@@ -42,7 +48,7 @@ export function Contact() {
             {channels.map(({ icon: Icon, label, value, href }) => {
               const content = (
                 <>
-                  <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-teal/15 text-teal">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand/15 text-brand">
                     <Icon className="size-5" aria-hidden="true" />
                   </span>
                   <span className="min-w-0">
@@ -58,7 +64,7 @@ export function Contact() {
                       href={href}
                       target={href.startsWith('http') ? '_blank' : undefined}
                       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 transition-colors hover:border-teal/50 hover:bg-white/10"
+                      className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 transition-colors hover:border-brand/50 hover:bg-white/10"
                     >
                       {content}
                     </a>
@@ -78,7 +84,7 @@ export function Contact() {
             {'© '}
             {new Date().getFullYear()} {profile.name}. All rights reserved.
           </p>
-          <p>QA Engineer · Generative AI · {profile.location}</p>
+          <p>QA Engineer · Test Automation · LLM Evaluation</p>
         </footer>
       </div>
     </section>

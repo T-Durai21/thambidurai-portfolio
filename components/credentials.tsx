@@ -45,7 +45,7 @@ export function Credentials() {
               {education.map((e) => (
                 <li key={e.degree} className="rounded-xl bg-navy p-6 text-navy-foreground">
                   <p className="text-lg font-semibold text-white">{e.degree}</p>
-                  <p className="mt-1 text-teal">{e.institution}</p>
+                  <p className="mt-1 text-brand">{e.institution}</p>
                   <p className="mt-3 text-sm text-navy-foreground/70">{e.year}</p>
                 </li>
               ))}

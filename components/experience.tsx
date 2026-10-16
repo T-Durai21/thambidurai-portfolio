@@ -37,7 +37,7 @@ export function Experience() {
                   <ul className="mt-5 space-y-2.5">
                     {exp.highlights.map((h) => (
                       <li key={h} className="flex gap-3 leading-relaxed text-muted-foreground">
-                        <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />
+                        <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
                         {h}
                       </li>
                     ))}

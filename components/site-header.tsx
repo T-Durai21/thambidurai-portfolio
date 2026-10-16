@@ -48,7 +48,7 @@ export function SiteHeader() {
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8"
       >
         <a href="#top" className="flex items-center gap-2 text-white" onClick={() => setOpen(false)}>
-          <span className="flex size-9 items-center justify-center rounded-lg bg-teal text-sm font-bold text-navy">
+          <span className="flex size-9 items-center justify-center rounded-lg bg-brand text-sm font-bold text-navy">
             VT
           </span>
           <span className="font-semibold tracking-tight">{profile.name}</span>
@@ -62,7 +62,7 @@ export function SiteHeader() {
                 aria-current={active === link.href ? 'true' : undefined}
                 className={cn(
                   'rounded-md px-2.5 py-2 text-sm font-medium transition-colors',
-                  active === link.href ? 'text-teal' : 'text-navy-foreground/80 hover:text-white',
+                  active === link.href ? 'text-brand' : 'text-navy-foreground/80 hover:text-white',
                 )}
               >
                 {link.label}
@@ -92,7 +92,7 @@ export function SiteHeader() {
                 onClick={() => setOpen(false)}
                 className={cn(
                   'block rounded-md px-3 py-3 text-base font-medium',
-                  active === link.href ? 'text-teal' : 'text-navy-foreground/90',
+                  active === link.href ? 'text-brand' : 'text-navy-foreground/90',
                 )}
               >
                 {link.label}

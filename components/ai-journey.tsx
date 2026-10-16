@@ -20,7 +20,7 @@ export function AiJourney() {
             const Icon = icons[item.icon]
             return (
               <li key={item.title} className="flex gap-4 rounded-2xl border bg-card p-6">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-navy text-teal">
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-navy text-brand">
                   <Icon className="size-5" aria-hidden="true" />
                 </span>
                 <div>
